@@ -25,7 +25,7 @@ public class LibroInteractivo {
         if (paginas.isEmpty()) {
             paginas.add(new PaginaInformativa(
                     "Contraseñas seguras", 1,
-                    "Una contraseña protege el acceso a tus cuentas digitales.\n\n"
+                    "Una contraseña protege el acceso a tus cuentas digitales.\n"
                     + "Es recomendable crear contraseñas largas, difíciles de adivinar "
                     + "y diferentes para cada cuenta.\n\n"
                     + "Evita nombres, fechas de nacimiento y combinaciones como 12345678.\n\n"
@@ -35,7 +35,7 @@ public class LibroInteractivo {
             paginas.add(new PaginaInformativa(
                     "Mensajes sospechosos", 2,
                     "Algunas personas envían mensajes falsos para intentar robar "
-                    + "contraseñas o datos personales. Esta práctica se conoce como phishing.\n\n"
+                    + "contraseñas o datos personales. Esta práctica se conoce como phishing.\n"
                     + "Desconfía de los mensajes que ofrecen premios inesperados, "
                     + "amenazan con bloquear tu cuenta o solicitan datos urgentes.\n\n"
                     + "CONSEJO: Para verificar una cuenta, abre directamente la "
@@ -43,14 +43,19 @@ public class LibroInteractivo {
 
             paginas.add(new PaginaInformativa(
                     "Protección de datos personales", 3,
-                    "Tu número de teléfono, dirección y ubicación son datos personales.\n\n"
+                    "Tu número de teléfono, dirección y ubicación son datos personales.\n"
                     + "Compartirlos públicamente o con desconocidos puede ponerte en riesgo. "
                     + "Revisa quién puede ver tus publicaciones y qué información muestras.\n\n"
                     + "CONSEJO: No compartas tu dirección ni tu teléfono con personas "
                     + "desconocidas en redes sociales o videojuegos."));
 
+            paginas.add(new PaginaInformativa("ACTIVIDAD DE REPASO ", 4, "Responde las preguntas que se te presentan\n"
+                    + "Presiona RESPONDER para empezar"));
+
             preguntas[0][0] = new Evaluacion("1. ¿Cuál contraseña es más segura?\n",
-                    new String[]{"1) 12345678\n", "2) miclave2026\n", "3) Rio-Luna!92_Cielo\n\n"});
+                    new String[]{"1) 12345678\n",
+                        "2) miclave2026\n",
+                        "3) Rio-Luna!92_Cielo\n\n"});
             preguntas[0][1] = new Evaluacion("2. Un correo te exige verificar una cuenta mediante un enlace. ¿Qué harías?\n",
                     new String[]{"1) Abrir el enlace inmediatamente\n",
                         "2) Entrar por mi cuenta al sitio oficial\n",
@@ -145,9 +150,9 @@ public class LibroInteractivo {
             return "Todavía no has realizado ningún intento";
         }
 
-        String texto = "HISTORIAL DE INTENTOS\n\n";
+        String texto = "HISTORIAL DE INTENTOS\n";
         for (int i = 1; i <= intentos; i++) {
-            texto += "Intento " + i + ": " + contarAciertos(i) + " de 3 aciertos\n";
+            texto += "Intento " + i + ": " + contarAciertos(i) + " de 3 aciertos\n\n";
         }
         texto += "INTENTOS DISPONIBLES: " + (3 - intentos);
         return texto;

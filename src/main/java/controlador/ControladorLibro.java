@@ -11,7 +11,7 @@ import modelo.Evaluacion;
 import modelo.LibroInteractivo;
 import modelo.PaginaActividad;
 import modelo.Sonido;
-import vista.VistaPrincipal;
+import vista.VistaPrincipalLibro;
 
 /**
  *
@@ -20,13 +20,12 @@ import vista.VistaPrincipal;
 public class ControladorLibro implements ActionListener {
 
     private LibroInteractivo modelo;
-    private PaginaActividad pagina;
-    private VistaPrincipal vista;
+    private VistaPrincipalLibro vista;
     private int posicion = 0;
 
     public ControladorLibro() {
         modelo = new LibroInteractivo();
-        vista = new VistaPrincipal();
+        vista = new VistaPrincipalLibro();
         vista.addButtonListener(this);
     }
 
