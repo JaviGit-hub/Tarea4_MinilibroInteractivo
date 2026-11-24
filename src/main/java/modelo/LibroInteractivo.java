@@ -23,6 +23,8 @@ public class LibroInteractivo {
     public LibroInteractivo() {
         //Con esta condición las páginas solo se cargan cuando la colección está vacía
         if (paginas.isEmpty()) {
+            paginas.add(new PaginaInformativa("PORTADA", 1, "TAREA 4\nMiniLibro: Navega Seguro" + "\nFundamentos de Programación"
+                    + "\n\nJavier Martinez Torres C6J031"));
             paginas.add(new PaginaInformativa(
                     "Contraseñas seguras", 1,
                     "Una contraseña protege el acceso a tus cuentas digitales.\n"
