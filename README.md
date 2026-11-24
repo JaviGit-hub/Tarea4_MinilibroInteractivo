@@ -21,4 +21,4 @@ que permite mostrar el contenido.
 - *LibroInteractivo:* Contiene los arreglos y métodos principales para crear las páginas, guardar las respuestas correctas y
 registrar el historial y los intentos realizados.
 - *ControladorLibro:* Establece la conexión entre las clases de paquete modelo con los elementos de la vista.
-*Principal:* Crea la instancia al controlador y ejecuta el proyecto.
+- *Principal:* Crea la instancia al controlador y ejecuta el proyecto.
