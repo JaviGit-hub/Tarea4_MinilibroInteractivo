@@ -70,7 +70,7 @@ public class ControladorLibro implements ActionListener {
 
     private void responder() {
         if (modelo.getIntentos() >= 3) {
-            JOptionPane.showMessageDialog(vista, "Ya utilizo los tres intentos.");
+            JOptionPane.showMessageDialog(vista, "Sin intentos restantes");
             return;
         }
 
@@ -92,7 +92,7 @@ public class ControladorLibro implements ActionListener {
             int puntos = modelo.registrarRespuestas(respuestas);
             new Sonido().start(); // hilo de sonido: ejemplo basico de concurrencia
             JOptionPane.showMessageDialog(vista,
-                    "Respuestas correctas: " + puntos + " de 3\n\n" + modelo.obtenerHistorial());
+                    "RESULTADOS\nRespuestas correctas: " + puntos + " de 3\n\n" + modelo.obtenerHistorial());
         } catch (IllegalArgumentException | IllegalStateException ex) {
             JOptionPane.showMessageDialog(vista, ex.getMessage());
         }
@@ -101,6 +101,7 @@ public class ControladorLibro implements ActionListener {
     public void iniciar() {
         mostrarPagina();
         vista.setLocationRelativeTo(null);
+        vista.setSize(500, 300);
         vista.setVisible(true);
     }
 

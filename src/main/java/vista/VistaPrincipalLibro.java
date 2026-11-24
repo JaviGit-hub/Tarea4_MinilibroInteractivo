@@ -59,11 +59,11 @@ public class VistaPrincipalLibro extends javax.swing.JFrame {
         btn_Responder = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setMinimumSize(new java.awt.Dimension(650, 450));
-        setPreferredSize(new java.awt.Dimension(325, 400));
+        setMinimumSize(new java.awt.Dimension(200, 200));
+        setPreferredSize(new java.awt.Dimension(600, 400));
 
         lbl_Titulo.setBackground(new java.awt.Color(204, 204, 255));
-        lbl_Titulo.setFont(new java.awt.Font("Outfit", 0, 12)); // NOI18N
+        lbl_Titulo.setFont(new java.awt.Font("Outfit", 0, 14)); // NOI18N
         lbl_Titulo.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lbl_Titulo.setText("NAVEGA SEGURO");
         getContentPane().add(lbl_Titulo, java.awt.BorderLayout.PAGE_START);
@@ -73,6 +73,9 @@ public class VistaPrincipalLibro extends javax.swing.JFrame {
         txt_Contenido.setLineWrap(true);
         txt_Contenido.setRows(5);
         txt_Contenido.setWrapStyleWord(true);
+        txt_Contenido.setMaximumSize(new java.awt.Dimension(200, 200));
+        txt_Contenido.setMinimumSize(new java.awt.Dimension(200, 200));
+        txt_Contenido.setPreferredSize(new java.awt.Dimension(600, 400));
         scroll_Texto.setViewportView(txt_Contenido);
 
         getContentPane().add(scroll_Texto, java.awt.BorderLayout.CENTER);

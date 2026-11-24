@@ -15,7 +15,7 @@ import modelo.Evaluacion;
 public class LibroInteractivo {
 
     private ArrayList<Pagina> paginas = new ArrayList<>();
-    private int[] respuestasCorrectas = {3, 2, 3};
+    private int[] respuestasCorrectas = {2, 1, 2};
     private Evaluacion[][] preguntas = new Evaluacion[1][3];
     private int[][] historial = new int[3][3];
     private int intentos = 0;
@@ -49,7 +49,7 @@ public class LibroInteractivo {
                     + "CONSEJO: No compartas tu dirección ni tu teléfono con personas "
                     + "desconocidas en redes sociales o videojuegos."));
 
-            paginas.add(new PaginaInformativa("ACTIVIDAD DE REPASO ", 4, "Responde las preguntas que se te presentan\n"
+            paginas.add(new PaginaInformativa("ACTIVIDAD DE REPASO ", 4, "Responde las preguntas que se te presentan\n\n"
                     + "Presiona RESPONDER para empezar"));
 
             preguntas[0][0] = new Evaluacion("1. ¿Cuál contraseña es más segura?\n",
