@@ -15,9 +15,10 @@ capítulos breves, ejemplos de situaciones cotidianas, recomendaciones, activida
 4. Para cerrar el libro presiona la X ubicada en la parte superior de la ventana.
 
 ## PRINCIPALES CLASES
-*Página:* Clase abstracta del proyecto. Guarda los atributos principales de las páginas del libro y contiene el método abstracto
+
+- *Página:* Clase abstracta del proyecto. Guarda los atributos principales de las páginas del libro y contiene el método abstracto
 que permite mostrar el contenido.
-*LibroInteractivo:* Contiene los arreglos y métodos principales para crear las páginas, guardar las respuestas correctas y
+- *LibroInteractivo:* Contiene los arreglos y métodos principales para crear las páginas, guardar las respuestas correctas y
 registrar el historial y los intentos realizados.
-*ControladorLibro:* Establece la conexión entre las clases de paquete modelo con los elementos de la vista.
+- *ControladorLibro:* Establece la conexión entre las clases de paquete modelo con los elementos de la vista.
 *Principal:* Crea la instancia al controlador y ejecuta el proyecto.
